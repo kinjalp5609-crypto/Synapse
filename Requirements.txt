@@ -1,1 +1,6 @@
-
+opencv-python
+mediapipe==0.10.30
+numpy
+matplotlib
+scikit-learn
+pyserial
