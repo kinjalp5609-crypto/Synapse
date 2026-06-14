@@ -23,6 +23,7 @@ A small sensor called BioAmp EXG Pill sits on your forehead. It reads tiny elect
 An Arduino sits inside the robot. Our laptop sends it one command wirelessly via Bluetooth F for forward, L for left, R for right, S for stop. Arduino reads it and spins the motors.Everything runs together in real time. You wear the sensor, sit in front of the camera, and just think and look. The robot moves.
 
 Software
+
 Python 3.11
 MediaPipe (eye tracking)
 OpenCV (camera)
