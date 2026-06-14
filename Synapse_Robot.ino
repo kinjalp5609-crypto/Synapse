@@ -1,14 +1,10 @@
-// ============================================================
-//  SYNAPSE_Robot.ino
-//  This file lives INSIDE the Arduino on the robot
-//  Upload this using Arduino IDE in July
-//
+//  Synapse_Robot.ino
+//  This file lives inside the Arduino on the robot
 //  What this does:
 //  Waits for commands from laptop via Bluetooth
 //  F = Forward, B = Backward, L = Left, R = Right, S = Stop
 //  1 = Slow, 2 = Medium, 3 = Fast
-//  T = Self test (run this first in July!)
-// ============================================================
+//  T = Self test
 
 // LEFT MOTOR pins
 #define IN1 2
@@ -28,8 +24,7 @@
 
 int currentSpeed = SPEED_MEDIUM;
 
-// If motor spins wrong way in July
-// change false to true for that motor
+// If motor spins wrong way then change false to true for that motor
 bool LEFT_REVERSED  = false;
 bool RIGHT_REVERSED = false;
 
@@ -37,7 +32,7 @@ bool RIGHT_REVERSED = false;
 unsigned long lastCommandTime = 0;
 #define TIMEOUT_MS 2000
 
-// ── Setup ────────────────────────────────────────────────────
+//Setup
 void setup() {
   pinMode(IN1, OUTPUT);
   pinMode(IN2, OUTPUT);
@@ -50,7 +45,7 @@ void setup() {
   stopMotors();
   Serial.begin(9600);
 
-  // Blink 3 times = Arduino is ready
+  // Blink 3 times
   for (int i = 0; i < 3; i++) {
     digitalWrite(LED_BUILTIN, HIGH); delay(200);
     digitalWrite(LED_BUILTIN, LOW);  delay(200);
@@ -60,7 +55,7 @@ void setup() {
   lastCommandTime = millis();
 }
 
-// ── Main loop ─────────────────────────────────────────────────
+//Main loop
 void loop() {
   // Auto stop if no command for 2 seconds
   if (millis() - lastCommandTime > TIMEOUT_MS) {
@@ -74,7 +69,7 @@ void loop() {
   }
 }
 
-// ── Execute command ───────────────────────────────────────────
+//Execute command
 void executeCommand(char cmd) {
   switch (cmd) {
     case 'F': case 'f': moveForward();  Serial.println("FORWARD");  break;
@@ -89,7 +84,7 @@ void executeCommand(char cmd) {
   }
 }
 
-// ── Motor control ─────────────────────────────────────────────
+//Motor control
 void setLeftMotor(int speed, bool forward) {
   if (LEFT_REVERSED) forward = !forward;
   analogWrite(ENA, speed);
@@ -133,8 +128,8 @@ void stopMotors() {
   digitalWrite(IN4, LOW);
 }
 
-// ── Self test — send T to run ─────────────────────────────────
-// Run this FIRST in July to check if motors are correct
+//Self test(send T to run)
+// Run this first to check if motors are correct
 void runSelfTest() {
   Serial.println("SELF TEST STARTING...");
   delay(1000);
