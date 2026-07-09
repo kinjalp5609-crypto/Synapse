@@ -19,11 +19,11 @@ No physical input at all..
 ## How it works?
 
 So there are three parts working together.
-1. Eye Tracking
+### 1. Eye Tracking
 A normal webcam watches your face. Our code finds your iris and tracks where it's moving 26 times every second. That tells the robot which direction to go.
-2. Brain Signals
+### 2. Brain Signals
 A small sensor called BioAmp EXG Pill sits on your forehead. It reads tiny electrical signals your brain produces. When you concentrate hard your brain produces stronger Beta waves. Our code measures that and decides the robot speed.
-3. Robot Control
+### 3. Robot Control
 An Arduino sits inside the robot. Our laptop sends it one command wirelessly via Bluetooth F for forward, L for left, R for right, S for stop. Arduino reads it and spins the motors.Everything runs together in real time. You wear the sensor, sit in front of the camera, and just think and look. The robot moves.
 
 # Software
