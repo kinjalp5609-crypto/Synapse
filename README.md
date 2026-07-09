@@ -1,11 +1,11 @@
 # Synapse - BCI Robot Project
 The project is about building a Brain-Computer Interface robot controlled entirely by eye movements and brainwaves. No hands. No voice. No touch.
 
-What exactly synapse is and the motivation behind it:
+## What exactly synapse is and the motivation behind it:
 
 So basically we are building a robot that a paralyzed person can control using only their eyes and brain signals. No keyboard. No touchscreen. Nothing physical at all.The idea is simple your brain still works even if your body doesn't. Your eyes still move. So why can't a machine just read that and do what you want?That's what synapse does.
 
-What it does?
+## What it does?
 
 You look left → robot goes left
 You look right → robot goes right
@@ -16,7 +16,7 @@ You relax → robot slows down
 
 No physical input at all..
 
-How it works?
+## How it works?
 
 So there are three parts working together.
 1. Eye Tracking
@@ -26,9 +26,9 @@ A small sensor called BioAmp EXG Pill sits on your forehead. It reads tiny elect
 3. Robot Control
 An Arduino sits inside the robot. Our laptop sends it one command wirelessly via Bluetooth F for forward, L for left, R for right, S for stop. Arduino reads it and spins the motors.Everything runs together in real time. You wear the sensor, sit in front of the camera, and just think and look. The robot moves.
 
-Software
+# Software
 
-File descriptions:
+## File descriptions:
 
 1. Main.py: It combines all the other files in this repo. Just run this file to make the robot move.
 
@@ -42,7 +42,7 @@ File descriptions:
 
 6. Requirements.txt: Python dependencies — install with pip install -r Requirements.txt
 
-# Tech stack
+ ## Tech stack
 
 Python 3.11
 MediaPipe: Face landmark detection and iris tracking
@@ -51,13 +51,12 @@ NumPy: Signal processing and FFT computation
 PySerial: Serial communication with Arduino
 scikit-learn: Random Forest classifier for EEG command prediction
 
+## How the whole code works?
 
-How the whole code works?
-
-main.py run this is to start everything.Eye_tracking.py detects where you're looking.eeg.py reads and processes brain signals.Robot.py sends commands to robot wirelessly.synapse_robot.ino upload this to Arduino on the robot.
+run main.py to start everything. Eye_tracking.py detects where you're looking, eeg.py reads and processes brain signals, Robot.py sends commands to robot wirelesslys and synapse_robot.ino upload this to Arduino on the robot.
 
 
-How to run?
+## How to run?
 
 Clone this repo
 Install requirements
@@ -66,12 +65,12 @@ Look straight at camera and hold SPACE to calibrate (60 frames)
 Look in any direction robot will follow.
 Press R to recalibrate and Q to quit.
 
-Team
+# Team
 
 Members and their roles:
-Kinjal - Team Lead — software devolopement and hardware testing
-Joshika - software devolopement and documentation
+Kinjal - Team Lead — software devolopment and hardware testing
+Joshika - software devolopment and documentation
 Pema - circuit diagram and circuit wiring
-Prajna -  Bill of Materials and fusion
+Prajna -  Bill of Materials and CAD design
 
 All team members will work together on hardware integration and debugging once we reach campus.
