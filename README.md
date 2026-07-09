@@ -45,10 +45,10 @@ An Arduino sits inside the robot. Our laptop sends it one command wirelessly via
  ## Tech stack
 
 Python 3.11
-MediaPipe: Face landmark detection and iris tracking
-OpenCV: Webcam access and frame display
-NumPy: Signal processing and FFT computation
-PySerial: Serial communication with Arduino
+MediaPipe: Face landmark detection and iris tracking |
+OpenCV: Webcam access and frame display | 
+NumPy: Signal processing and FFT computation | 
+PySerial: Serial communication with Arduino | 
 scikit-learn: Random Forest classifier for EEG command prediction
 
 ## How the whole code works?
@@ -58,10 +58,10 @@ run main.py to start everything. Eye_tracking.py detects where you're looking, e
 
 ## How to run?
 
-Clone this repo
-Install requirements
-Run main.py
-Look straight at camera and hold SPACE to calibrate (60 frames)
+Clone this repo | 
+Install requirements |
+Run main.py |
+Look straight at camera and hold SPACE to calibrate (60 frames) |
 Look in any direction robot will follow.
 Press R to recalibrate and Q to quit.
 
