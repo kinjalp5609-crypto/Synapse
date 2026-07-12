@@ -68,8 +68,8 @@ Press R to recalibrate and Q to quit.
 # Team
 
 Members and their roles:
-Kinjal - Team Lead — software devolopment and hardware testing
-Joshika - software devolopment and documentation
+Kinjal - Team Lead — software development and hardware testing
+Joshika - software development and documentation
 Pema - circuit diagram and circuit wiring
 Prajna -  Bill of Materials and CAD design
 
