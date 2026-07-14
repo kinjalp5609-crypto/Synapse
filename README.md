@@ -59,6 +59,23 @@ Python 3.11
 - Robot.py sends commands to robot wirelesslys
 - synapse_robot.ino upload this to Arduino on the robot.
 
+# Hardware
+
+## Bill of materials
+
+https://docs.google.com/spreadsheets/d/1ViyH4925y2a3-7yPxp-DtimrXw_hFAsfrI5lMflk2KY/edit?usp=drivesdk
+
+## Future plans
+
+- Receive the BioAmp EXG Pill sensor and connect it to the Arduino to verify the raw EEG signal
+- Test and debug all the code with the real hardware
+- Build the physical robot — assemble the chassis, wire the motors, L298N motor driver and HC-05 module
+
+## Circuit diagram
+
+
+## CAD design of bot
+
 
 ## How to run?
 
