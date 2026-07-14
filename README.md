@@ -45,15 +45,19 @@ An Arduino sits inside the robot. Our laptop sends it one command wirelessly via
  ## Tech stack
 
 Python 3.11
-MediaPipe: Face landmark detection and iris tracking |
-OpenCV: Webcam access and frame display | 
-NumPy: Signal processing and FFT computation | 
-PySerial: Serial communication with Arduino | 
-scikit-learn: Random Forest classifier for EEG command prediction
+- MediaPipe: Face landmark detection and iris tracking 
+- OpenCV: Webcam access and frame display 
+- NumPy: Signal processing and FFT computation 
+- PySerial: Serial communication with Arduino 
+- scikit-learn: Random Forest classifier for EEG command prediction
 
 ## How the whole code works?
 
-run main.py to start everything. Eye_tracking.py detects where you're looking, eeg.py reads and processes brain signals, Robot.py sends commands to robot wirelesslys and synapse_robot.ino upload this to Arduino on the robot.
+- run main.py to start everything.
+- Eye_tracking.py detects where you're looking
+- eeg.py reads and processes brain signals
+- Robot.py sends commands to robot wirelesslys
+- synapse_robot.ino upload this to Arduino on the robot.
 
 
 ## How to run?
