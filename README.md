@@ -44,7 +44,7 @@ An Arduino sits inside the robot. Our laptop sends it one command wirelessly via
 
  ## Tech stack
 
-Python 3.11
+- Python 3.11
 - MediaPipe: Face landmark detection and iris tracking 
 - OpenCV: Webcam access and frame display 
 - NumPy: Signal processing and FFT computation 
@@ -56,7 +56,7 @@ Python 3.11
 - run main.py to start everything.
 - Eye_tracking.py detects where you're looking
 - eeg.py reads and processes brain signals
-- Robot.py sends commands to robot wirelesslys
+- Robot.py sends commands to robot wirelessly
 - synapse_robot.ino upload this to Arduino on the robot.
 
 # Hardware
@@ -64,6 +64,13 @@ Python 3.11
 ## Bill of materials
 
 https://docs.google.com/spreadsheets/d/1ViyH4925y2a3-7yPxp-DtimrXw_hFAsfrI5lMflk2KY/edit?usp=drivesdk
+
+# Current Status
+
+- Eye tracking code is complete and working
+- EEG, robot control and Arduino code are written and ready but pending hardware verification
+- Hardware components are being ordered
+- Bill of Materials is finalized
 
 ## Future plans
 
@@ -79,12 +86,12 @@ https://docs.google.com/spreadsheets/d/1ViyH4925y2a3-7yPxp-DtimrXw_hFAsfrI5lMflk
 
 ## How to run?
 
-Clone this repo | 
-Install requirements |
-Run main.py |
-Look straight at camera and hold SPACE to calibrate (60 frames) |
-Look in any direction robot will follow.
-Press R to recalibrate and Q to quit.
+- Clone this repo 
+- Install requirements 
+- Run main.py 
+- Look straight at camera and hold SPACE to calibrate (60 frames) 
+- Look in any direction robot will follow
+- Press R to recalibrate and Q to quit.
 
 # Team
 
