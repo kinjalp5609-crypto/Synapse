@@ -80,8 +80,11 @@ https://docs.google.com/spreadsheets/d/1ViyH4925y2a3-7yPxp-DtimrXw_hFAsfrI5lMflk
 
 ## Circuit diagram
 
+<img width="1200" height="1600" alt="circuit_diagram" src="https://github.com/user-attachments/assets/8420e94b-67f0-4a5c-ab71-2f031b50b90c" />
 
 ## CAD design of bot
+
+<img width="1004" height="569" alt="Cad_Model" src="https://github.com/user-attachments/assets/17b56b53-a5f2-4c00-9f89-a5f42b4fa8be" />
 
 
 ## How to run?
